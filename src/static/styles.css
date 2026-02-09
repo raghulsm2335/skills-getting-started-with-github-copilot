@@ -149,16 +149,39 @@ footer {
   border-top: 1px solid #e0e0e0;
 }
 
+
 .participants-list {
-  margin: 8px 0 0 20px;
+  margin: 8px 0 0 0;
   padding: 0;
-  list-style-type: disc;
+  list-style-type: none;
   font-size: 0.9em;
   color: #555;
 }
 
 .participants-list li {
-  margin: 4px 0;
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-email {
+  flex: 1 1 auto;
+  color: #555;
+}
+
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+}
+
+.unregister-btn:hover {
+  color: #8e0000;
 }
 
 .participants-list li em {
